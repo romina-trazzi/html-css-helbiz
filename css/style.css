@@ -1,0 +1,116 @@
+/* Codice Helbiz */
+
+header {
+  position: relative;
+  background-image: url("../img/bgimage.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  color: white;
+}
+
+.header > a {
+  color: white;
+  margin-right: 20px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  height: 80px;
+  line-height: 80px;
+}
+
+a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+i {
+  color: blue;
+}
+
+.pr_1 {
+  padding-right: 1rem;
+}
+
+.pl_1 {
+  padding-left: 1rem;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+}
+
+.header_menu, .header_langs{
+  font-size: 0.55rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.list_inline {
+  text-align: right;
+}
+
+.header_langs li:not(:last-child) a {
+  border-right: 1px solid white;
+}
+
+header img[src$=".svg"] {   /* tutte le img di header che terminano per .svg */
+  width: 25%;
+}
+
+/* end header nav */
+
+
+.hero_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero_text p {
+  margin: 20px 0 30px 0;
+  font-size: 20px;
+}
+
+.hero_text h1 {
+  font-size: 3em;
+}
+
+/* end header */
+
+
+/* main */
+
+/* section models */
+
+#models .card {
+  text-align: center;
+  background-color: #fafafa;
+  line-height: 2em;
+  margin-top: 50px;
+}
+
+#models .card img {
+  max-width: 100%;
+  padding-top: 80px;
+}
+
+main img[src$=".svg"] {   /* tutte le img di main che terminano per .svg */
+  width: 45%;
+}
+
+/* end section models */
+
+
+/* section cel */
+
+#cel img {
+  width: 50%;
+}
