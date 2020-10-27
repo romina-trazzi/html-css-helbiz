@@ -216,5 +216,10 @@ span > i {
   height: 750px;
 }
 
+footer {
+  background-color: black;
+  height: 500px;
+}
+
 
 /* end section app_around */
