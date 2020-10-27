@@ -10,9 +10,10 @@ header {
   color: white;
 }
 
-.header > a {
-  color: white;
+header  a {
+  color: black;
   margin-right: 20px;
+  text-decoration: none;
 }
 
 body {
@@ -21,13 +22,6 @@ body {
 
 nav {
   height: 80px;
-  line-height: 80px;
-}
-
-a {
-  text-decoration: none;
-  margin-right: 20px;
-  color: red;
 }
 
 i {
@@ -42,7 +36,7 @@ i {
   padding-left: 1rem;
 }
 
-li {
+header li {
   list-style-type: none;
   display: inline;
 }
@@ -216,10 +210,37 @@ span > i {
   height: 750px;
 }
 
-footer {
-  background-color: black;
-  height: 500px;
-}
-
 
 /* end section app_around */
+
+/* end main */
+
+
+/* footer */
+
+footer {
+  background-color: black;
+  height: auto;
+  padding-top: 120px;
+}
+
+.col-lg-2 > img {
+  width: 75%;
+}
+
+.title {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.item {
+  color: lightgrey;
+  font-size: 14px;
+}
+
+footer li {
+  list-style-type: none;
+  line-height: 2em;
+}
