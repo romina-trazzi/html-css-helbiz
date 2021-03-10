@@ -1,32 +1,27 @@
 /* Codice Helbiz */
 
+body {
+  font-family: sans-serif;
+  width: 1543px;
+  margin: 0 auto;
+}
+
 header {
   position: relative;
   background-image: url("../img/bgimage.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 50px;
+  margin-top: 80px;
   height: 500px;
   color: white;
 }
 
-header  a {
-  color: black;
-  margin-right: 20px;
-  text-decoration: none;
-}
-
-body {
-  font-family: sans-serif;
-}
-
 nav {
   height: 80px;
+  transform: translate(240px, -60%);
 }
 
-i {
-  color: blue;
-}
+/* Classi utility */
 
 .pr_1 {
   padding-right: 1rem;
@@ -36,30 +31,48 @@ i {
   padding-left: 1rem;
 }
 
+.text_center {
+  text-align: center;
+}
+
+
+/* End classi utility */
+
+
+/* Header e Navbar */
+
+header a {
+  color: black;
+  margin-right: 25px;
+  text-decoration: none;
+}
+
 header li {
   list-style-type: none;
   display: inline;
 }
 
-.header_menu, .header_langs{
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.list_inline {
-  text-align: right;
-}
-
-.header_langs li:not(:last-child) a {
-  border-right: 1px solid white;
+.header_logo > img:nth-child(1) {
+  width: 100px !important;
 }
 
 header img[src$=".svg"] {   /* tutte le img di header che terminano per .svg */
   width: 25%;
 }
 
-/* end header nav */
+.header_menu {
+  margin-left: -60px;
+  font-size: 0.75rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+li span {
+  padding-left: 15px;
+}
+
+/* End header nav */
 
 
 .hero_text {
@@ -79,22 +92,27 @@ header img[src$=".svg"] {   /* tutte le img di header che terminano per .svg */
   font-size: 3em;
 }
 
-/* end header */
+/* end header (jumbotron) */
 
 
 /* main */
 
 /* section models */
 
+#models {
+  margin-bottom: 50px;
+}
+
 #models .card {
   text-align: center;
   background-color: #fafafa;
   line-height: 3em;
   margin-top: 50px;
+  position: relative;
 }
 
 #models .card img {
-  max-width: 100%;
+  max-width: 80%;
   padding-top: 80px;
 }
 
@@ -102,7 +120,21 @@ main img[src$=".svg"] {   /* tutte le img di main che terminano per .svg */
   width: 45%;
 }
 
+.card a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -330%);
+  text-decoration: none;
+}
+
+.card i {
+  color: blue;
+  padding: 3px;
+}
+
 /* end section models */
+
 
 /* section download */
 
@@ -115,22 +147,39 @@ main img[src$=".svg"] {   /* tutte le img di main che terminano per .svg */
 
 /* section cel */
 
-#cel .col-lg-4 img {
-  width: 80%;
-  transform: translateY(-50%);
+#cel {
+  margin-bottom: 150px;
 }
 
-#cel > div:nth-child(1) > div:nth-child(1) p { /* how work */
-  font-size: 36px;
+#cel img {
+  max-width: 280px;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+#cel p {
+  margin-top: 150px;
+  margin-left: 150px;
+}
+
+
+
+.col-lg-12 > p:nth-child(2) > span:nth-child(1){ /* how does */
+  font-size: 2em;
   color: black;
-  margin-top: 150px;
+  width: 50%;
 }
 
-#cel > div > div:nth-child(3) > div > p  { /* step_1 */
-  font-size: 14px;
-  margin-top: 150px;
-  margin-left: 200px;
+
+
+#cel .col-lg-12 > p:nth-child(2) > span:nth-child(1) > span:nth-child(3) { /* step_1 */
+  font-size: 0.5em;
   text-align: left;
+  position: absolute;
+  right: -240px;
+  width: 50%;  
+  
 }
 
 #cel > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
@@ -148,21 +197,37 @@ main img[src$=".svg"] {   /* tutte le img di main che terminano per .svg */
 }
 
 #smart_mobility img {
-  width: 100%;
+  width: 120%;
   background-repeat: no-repeat;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .white {
   color: white;
   position: absolute;
-  right: 0;
-  top: 50%;
+  right: 15%;
+  top: 25%;
 }
 
-span > i {
-  color: white;
-  padding-left: 20px;
+.white > h2 {
+  font-size: 3em;
+  font-weight: 200;
+  padding-bottom: 20px;
+  text-align: center;
 }
+
+.white > p {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+i {
+  color: white;
+  padding-left: 10px;
+}
+
 
 /* end section smart_mobility */
 
@@ -173,26 +238,65 @@ span > i {
   margin-bottom: 30px;
 }
 
+#app_around .col-lg-6 {
+  height: 750px;
+  width: 685px;
+}
+
+
+/* Blocco Get the app */ 
+
+#app_around > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > img {
+  position: relative;
+  transform: translate(45%, 5%);
+}
+
 #app_around > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
   background: linear-gradient(0deg, rgba(0,0,0,1) 22%, rgba(63,83,102,1) 62%);
   position: relative;
-  height: 750px;
+  transform: translateX(-17%);
 }
 
-#app_around > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-  position: absolute;
-  bottom: 50;
-  left: 50;
-  transform: translate(30%, 50%);
+#app_around > div:nth-child(1) > div:nth-child(1) > div:nth-child(1):hover{
+  filter: hue-rotate(90deg);
+  transition: 1s;
+}
 
+
+/* Blocco Find us around */
+
+#app_around > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+  background-image: url("../img/city.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  transform: translateX(88%);
+}
+
+#app_around > div:nth-child(1) > div:nth-child(1) > div:nth-child(2):hover {
+  filter: brightness(1.3); 
+  transition: 1s;
 }
 
 .get {
   color: white;
   text-align: center;
   line-height: 3em;
-  padding-top: 20px;
+  padding-top: 50px;
 
+}
+
+.get > h2 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.get > p {
+  font-size: 1.3em;
+}
+
+.get > span {
+ font-size: 1.4em;
 }
 
 #ios > i {
@@ -202,14 +306,6 @@ span > i {
 #android > i {
   margin-left: 10px;
 }
-
-#app_around > .container > div:nth-child(2) > div:nth-child(1) {
-  background-image: url("../img/city.jpg");
-  background-repeat: no-repeat;
-  background-size:cover;
-  height: 750px;
-}
-
 
 /* end section app_around */
 
@@ -221,11 +317,28 @@ span > i {
 footer {
   background-color: black;
   height: auto;
-  padding-top: 120px;
+  padding-top: 80px;
+  padding-bottom: 150px;
+  margin-top: 25px;
+  position: relative;
 }
 
-.col-lg-2 > img {
-  width: 75%;
+footer img[src$=".svg"] {   /* tutte le img di header che terminano per .svg */
+  width: 8%;
+  border: 1px solid white;
+  border-radius: 5%;
+  margin-left: 3px;
+}
+
+footer .col-lg-12 {
+  position: absolute;
+  transform: translateX(30%);
+
+} 
+
+footer li {
+  list-style-type: none;
+  line-height: 2em;
 }
 
 .title {
@@ -233,14 +346,41 @@ footer {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
+  line-height: 2em;
 }
 
 .item {
-  color: lightgrey;
-  font-size: 14px;
+  color: grey;
+  font-size: 0.8em;
+  font-weight: 600;
+  line-height: 2.8em;
 }
 
-footer li {
-  list-style-type: none;
-  line-height: 2em;
+.bordery {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: white;
+  font-size: 0.75em;
 }
+
+.bordery i {
+  color: white;
+  cursor: pointer;
+  font-size: 1.8em;
+  margin-left: 5px;
+  padding-bottom: 12px;
+}
+
+.bordery > div:hover {
+  cursor: pointer;
+}
+
+div.col-md-6:nth-child(2), div.col-md-6:nth-child(3), div.col-md-6:nth-child(4) {
+  padding-top: 5px;
+}
+
+
